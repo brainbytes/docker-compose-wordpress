@@ -13,7 +13,16 @@ $ git submodule add git@github.com:brainbytes/docker-compose-wordpress.git
 
 ```
 $ cd docker-compose-wordpress
+docker-compose up -d
+```
 
+The first time you run this, it might take a while to load especially if you haven't already 
+downloaded the images. The next time will be WAY faster though.
+
+### Shut it Down
+
+```
+docker-compose down
 ```
 
 ## To Install docker
