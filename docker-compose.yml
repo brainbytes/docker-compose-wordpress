@@ -27,6 +27,15 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: wordpress
 
+  my-wpcli:
+      image: tatemz/wp-cli
+      volumes_from:
+        - wordpress
+      links:
+        - db
+      entrypoint: wp
+      command: "--info"
+
   phpmyadmin:
     depends_on:
       - db
