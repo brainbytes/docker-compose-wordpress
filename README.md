@@ -21,8 +21,8 @@ downloaded the images. The next time will be WAY faster though.
 
 ### Using WP-CLI
 
-`docker-compose run --rm my-wpcli` is equivalent to the `wp` command.  For instance `docker-compose run --rm my-wpcli user create jimmy jimmy@email.com --role="administrator"` creates an admin user with the specified name, username, and role.
-[WP-CLI Docs](http://wp-cli.org/) for more info.
+Use `docker exec <containername> wp`, for example `docker exec <containername> wp theme install 
+quark`. See the [WP-CLI Docs](http://wp-cli.org/) for more info.
 
 ### Shut it Down
 
@@ -30,11 +30,28 @@ downloaded the images. The next time will be WAY faster though.
 docker-compose down
 ```
 
-## To Install docker
+## Other Useful Information
+
+### Open a Bash Shell
+
+```
+docker ps
+sudu docker exec -it [container name or id] bash
+```
+
+On Windows:
+
+```
+docker ps
+winpty docker exec -it [container name or id] bash
+```
+
+### To Install docker
 
 1. Google it
 1. Follow the instructions you found
 
-### Quick Note About Windows
+#### Quick Note About Windows
+
 You must enable sharing for your local drive in Docker settings -> Shared Drives before volume 
 persistance works.
