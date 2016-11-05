@@ -24,6 +24,14 @@ downloaded the images. The next time will be WAY faster though.
 Use `docker exec <containername> wp`, for example `docker exec <containername> wp theme install 
 quark`. See the [WP-CLI Docs](http://wp-cli.org/) for more info.
 
+If you're creating a development environment from production data, the [wp 
+search-replace](http://wp-cli.org/commands/search-replace/) command may be useful, for example:
+
+```
+docker exec <containername> wp search-replace 'http://www.production-url.com' 'http://localhost:8000'
+docker exec <containername> wp search-replace 'https://www.production-url.com' 'http://localhost:8000'
+```
+
 ### Shut it Down
 
 ```
