@@ -44,7 +44,7 @@ docker-compose down
 
 ```
 docker ps
-sudu docker exec -it [container name or id] bash
+sudo docker exec -it [container name or id] bash
 ```
 
 On Windows:
