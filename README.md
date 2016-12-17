@@ -58,7 +58,7 @@ winpty docker exec -it [container name or id] bash
 
 On Window:
 
-Download [here](https://docs.docker.com/docker-for-windows/) and be sure to read about the prerequisites.
+Download [here](https://docs.docker.com/docker-for-windows/) and be sure to read about the prerequisites. Can't get it working? Try running [this PowerShell script](https://github.com/Microsoft/Virtualization-Documentation/tree/master/windows-server-container-tools/Debug-ContainerHost) to diagnose common issues.
 
 On MacOS:
 
