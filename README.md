@@ -56,6 +56,14 @@ winpty docker exec -it [container name or id] bash
 
 ### To Install docker
 
+On Window:
+
+Download [here](https://docs.docker.com/docker-for-windows/) and be sure to read about the prerequisites.
+
+On MacOS:
+
+Download [here](https://docs.docker.com/docker-for-mac/) and have fun. It's easier to get Docker going on MacOS than Windows.
+
 1. Google it
 1. Follow the instructions you found
 
