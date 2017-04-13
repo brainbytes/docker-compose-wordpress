@@ -69,5 +69,4 @@ Download [here](https://docs.docker.com/docker-for-mac/) and have fun. It's easi
 
 #### Quick Note About Windows
 
-You must enable sharing for your local drive in Docker settings -> Shared Drives before volume 
-persistance works.
+You must enable sharing for your local drive in Docker settings -> Shared Drives before volume persistance works.
